@@ -18,6 +18,9 @@
 		7E6FDE2E2AE15F9A00190C3B /* SpaceInvaderNineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDE2D2AE15F9A00190C3B /* SpaceInvaderNineTests.swift */; };
 		7E6FDE382AE15F9A00190C3B /* SpaceInvaderNineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDE372AE15F9A00190C3B /* SpaceInvaderNineUITests.swift */; };
 		7E6FDE3A2AE15F9A00190C3B /* SpaceInvaderNineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDE392AE15F9A00190C3B /* SpaceInvaderNineUITestsLaunchTests.swift */; };
+		7E6FDE492AE1C2DC00190C3B /* bulletSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FDE482AE1C2DC00190C3B /* bulletSound.mp3 */; };
+		7E6FDE4B2AE1C37500190C3B /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FDE4A2AE1C37500190C3B /* explosion.mp3 */; };
+		7E6FDE4D2AE1D64800190C3B /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDE4C2AE1D64800190C3B /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		7E6FDE332AE15F9A00190C3B /* SpaceInvaderNineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceInvaderNineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6FDE372AE15F9A00190C3B /* SpaceInvaderNineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceInvaderNineUITests.swift; sourceTree = "<group>"; };
 		7E6FDE392AE15F9A00190C3B /* SpaceInvaderNineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceInvaderNineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E6FDE482AE1C2DC00190C3B /* bulletSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bulletSound.mp3; path = ../../../Downloads/bulletSound.mp3; sourceTree = "<group>"; };
+		7E6FDE4A2AE1C37500190C3B /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = explosion.mp3; path = ../../../Downloads/explosion.mp3; sourceTree = "<group>"; };
+		7E6FDE4C2AE1D64800190C3B /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +108,13 @@
 		7E6FDE122AE15F9800190C3B /* SpaceInvaderNine */ = {
 			isa = PBXGroup;
 			children = (
+				7E6FDE482AE1C2DC00190C3B /* bulletSound.mp3 */,
+				7E6FDE4A2AE1C37500190C3B /* explosion.mp3 */,
 				7E6FDE132AE15F9800190C3B /* AppDelegate.swift */,
 				7E6FDE152AE15F9800190C3B /* GameScene.sks */,
 				7E6FDE172AE15F9800190C3B /* Actions.sks */,
 				7E6FDE192AE15F9800190C3B /* GameScene.swift */,
+				7E6FDE4C2AE1D64800190C3B /* GameOverScene.swift */,
 				7E6FDE1B2AE15F9800190C3B /* GameViewController.swift */,
 				7E6FDE1D2AE15F9800190C3B /* Main.storyboard */,
 				7E6FDE202AE15F9A00190C3B /* Assets.xcassets */,
@@ -239,7 +248,9 @@
 				7E6FDE162AE15F9800190C3B /* GameScene.sks in Resources */,
 				7E6FDE212AE15F9A00190C3B /* Assets.xcassets in Resources */,
 				7E6FDE242AE15F9A00190C3B /* LaunchScreen.storyboard in Resources */,
+				7E6FDE4B2AE1C37500190C3B /* explosion.mp3 in Resources */,
 				7E6FDE182AE15F9800190C3B /* Actions.sks in Resources */,
+				7E6FDE492AE1C2DC00190C3B /* bulletSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +277,7 @@
 			files = (
 				7E6FDE1A2AE15F9800190C3B /* GameScene.swift in Sources */,
 				7E6FDE1C2AE15F9800190C3B /* GameViewController.swift in Sources */,
+				7E6FDE4D2AE1D64800190C3B /* GameOverScene.swift in Sources */,
 				7E6FDE142AE15F9800190C3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,13 +455,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W23XG48ZX7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,13 +484,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W23XG48ZX7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
