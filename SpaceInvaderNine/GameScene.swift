@@ -275,7 +275,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if body1.categoryBitMask == PhysicsCategories.Player && body2.categoryBitMask == PhysicsCategories.PowerUp{
             if body1.node != nil{
-                print("PowerUp")
                 addLive()
                 body2.node?.removeFromParent()
 
@@ -437,6 +436,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             enemy, stop in
             enemy.removeAllActions()
         }
+        
+        self.enumerateChildNodes(withName: "PowerUp"){
+            powerUp, stop in
+            powerUp.removeAllActions()
+        }
+        
         
         let changeSceneAction = SKAction.run(changeScene)
         let waitToChangeScene = SKAction.wait(forDuration: 1)
